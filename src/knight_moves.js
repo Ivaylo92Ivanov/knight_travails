@@ -6,8 +6,8 @@ export default function knightMoves(coordinates) {
   const startPoint = coordinates[0];
   const endPoint = coordinates[1];
 
-  console.log('StartPoint: ' + `[${startPoint}]`);
-  console.log('endPoint: ' + `[${endPoint}]`);
+  console.log('Start Point: ' + `[${startPoint}]`);
+  console.log('End Point: ' + `[${endPoint}]`);
 
   const treeRoot = new BoardNode(startPoint, [startPoint]);
   // make a queue to simulate level order traversal of possible paths
@@ -31,6 +31,6 @@ export default function knightMoves(coordinates) {
 };
 
 function logPath(path) {
-  console.log(`=> You made it in ${path.length} moves!  Here's your path:`);
+  console.log(`=> You made it in ${path.length-1} moves!  Here's your path:`);
   path.forEach((step) => console.log(`[${step}]`));
 };
