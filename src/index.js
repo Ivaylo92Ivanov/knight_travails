@@ -1,4 +1,4 @@
-import getCoordinates from "./getCoordinates";
+import getCoordinates from "./get_coordinates";
 import knightMoves from "./knight_moves";
 
-knightMoves(getCoordinates())
+knightMoves(getCoordinates());
